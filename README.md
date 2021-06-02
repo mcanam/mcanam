@@ -1,6 +1,6 @@
 ### Hi there Im Anam 👋
 
-if you have any question please visit the link https://bit.ly/3vCPr9L
+if you have question please visit the link https://bit.ly/3vCPr9L
 
 <!--
 **mcanam/mcanam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
