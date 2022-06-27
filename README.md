@@ -1,8 +1,8 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 📫 How to reach me: [email](mailto:mcanamhello@gmail.com)
+- 🔭 I’m currently working on: `html` `css` `js`
+- 🌱 I’m currently learning: `math` `algorithm`
+- 📫 How to reach me: [click here](mailto:mcanamhello@gmail.com)
 
 <!--
 - 👯 I’m looking to collaborate on ...
