@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 - 🔭 I’m currently working on: `html` `css` `js`
-- 🌱 I’m currently learning: `how to be rich`
+- 🌱 I’m currently learning: `react native`
 - 📫 How to reach me: [click here](mailto:mcanamhello@gmail.com)
 
 <!--
