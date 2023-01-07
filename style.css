@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+      padding: 0; margin: 0;
+      box-sizing: border-box;
+}
+
+html, body {
+      font-family: sans-serif;
+      font-size: 16px;
+      color: #33444d;
+      line-height: 1.5;
+}
+
+.section {
+      width: 100%;
+      padding: 40px;
+}
+
+.avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: hsl(200, 20%, 90%);
+}
+
+.avatar-image {
+      display: none;
+}
+
+.name {
+      margin: 20px 0;
+}
+
+.bio {
+      color: hsl(200, 20%, 40%);
+      margin-bottom: 40px;
+}
+
+.link {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+
+.link-item {
+      text-decoration: none;
+      color: inherit;
+}
+
+.link-item .feather {
+      width: 1.2rem;
+}
