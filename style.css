@@ -1,111 +1,143 @@
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
 }
 
 html {
-    width: 100%;
-    height: 100%;
+      width: 100%;
+      height: 100%;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-    color: #ff415a;
-    background-color: #07080c;
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #ff415a;
+      background-color: #07080c;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+      text-decoration: none;
+      color: inherit;
 }
 
 .section {
-    padding: 20px;
+      padding: 40px;
 }
 
 .section__number {
-    font-size: 1rem;
+      font-size: 1rem;
 }
 
 .section__title {
-    font-size: 2.8rem;
-    line-height: 1;
-    margin-bottom: 0.6em;
+      font-size: 2.8rem;
+      line-height: 1;
+      margin-bottom: 0.6em;
 }
 
 .intro {
-    opacity: 0.7;
+      opacity: 0.7;
 }
 
 .intro a {
-    border-bottom: 1px dashed currentColor;
+      border-bottom: 1px dashed currentColor;
 }
 
 .skill__list {
-    list-style: none;
-    opacity: 0.7;
+      list-style: none;
+      opacity: 0.7;
 }
 
 .skill__item {
-    padding-bottom: 0.6em;
-    margin-bottom: 0.6em;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px dashed currentColor;
+      padding-bottom: 0.6em;
+      margin-bottom: 0.6em;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed currentColor;
 }
 
 .skill__item :last-child {
-    font-family: monospace;
+      font-family: monospace;
 }
 
 .project {
-    opacity: 0.7;
+      opacity: 0.7;
 }
 
 .project__title {
-    font-size: 1.4rem;
+      font-size: 1.4rem;
 }
 
 .project__item {
-    margin-bottom: 1em;
+      margin-bottom: 1em;
 }
 
 .project :last-child {
-    margin-bottom: 0;
+      margin-bottom: 0;
 }
 
 .contact__brief,
 .contact__list {
-    opacity: 0.7;
+      opacity: 0.7;
 }
 
 .contact__brief {
-    margin-bottom: 1em;
+      margin-bottom: 1.5em;
 }
 
 .contact__list {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
 }
 
 .contact__item a {
-    border-bottom: 1px dashed currentColor;
+      border-bottom: 1px dashed currentColor;
 }
 
-@media screen and (min-width: 480px) {
-    .section {
-        padding: 40px 200px;
-    }
+.minimap {
+      position: fixed;
+      z-index: 100;
+      top: 60px; left: 60px;
+      display: none;
+      padding: 40px;
+      transform: scale(0.2);
+      transform-origin: top left;
+      pointer-events: none;
+}
+
+.minimap__outline {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100vh;
+      border: 3px solid currentColor;
+}
+
+@media screen and (min-width: 1080px) {
+      main {
+            padding: 40px 300px;
+            padding-left: 420px;
+      }
+
+      .minimap {
+            display: unset;
+      }
+
+      .cursor {
+            display: unset;
+      }
 }
