@@ -1,7 +1,10 @@
 (function () { "use strict";
 
+      let lenis = null;
+      let isSkillScrollIntoView = false;
+
       function initLenis() {
-            const lenis = new Lenis({
+            lenis = new Lenis({
                   duration: 2,
                   smooth: true,
                   mouseMultiplier: 1,
@@ -38,7 +41,46 @@
             $content.appendChild(cloned);
       }
 
-      initLenis();
-      initMinimap();
+      function initSkillBars() {
+            const $skillList = document.querySelector('.skill__list');
+            const $skills = document.querySelectorAll(".skill__bar");
+
+            lenis.on('scroll', () => {
+                  const rect = $skillList.getBoundingClientRect();
+
+                  if ((rect.top > 250 && rect.top < 280) && !isSkillScrollIntoView) {
+                        $skills.forEach($skill => {
+                              const progress = Number($skill.dataset.progress);
+                              const total = progress + 10;
+
+                              let count = 1;
+
+                              const interval = setInterval(() => {
+                                    if (count == total) clearInterval(interval);
+                                    if (count <= 10) $skill.innerText = `[${'-'.repeat(count)}]`;
+                                    if (count > 10)  $skill.innerText = $skill.innerText.replace(/-/, '=');
+                                    count += 1;
+                              }, 60);
+                        });
+
+                        isSkillScrollIntoView = true; 
+                  }
+            })
+      }
+
+      function initSplashScreen() {
+            const $splash = document.querySelector(".splash__screen");
+
+            const timeout = setTimeout(() => {
+                  $splash.classList.add("hidden");
+                  document.body.classList.remove("no__scroll");
+                  initLenis();
+                  initSkillBars();
+                  initMinimap();
+                  clearTimeout(timeout);
+            }, 4000);
+      }
+
+      initSplashScreen();
 
 })();

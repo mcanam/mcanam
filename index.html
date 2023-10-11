@@ -12,7 +12,13 @@
       <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="no__scroll">
+      <div class="splash__screen">
+            <div class="spinner">
+                  <div class="double__bounce1"></div>
+                  <div class="double__bounce2"></div>
+            </div>
+      </div>
       <main>
             <div class="wrapper">
                   <section class="section">
@@ -47,31 +53,31 @@
                         <ul class="skill__list">
                               <li class="skill__item">
                                     <span>HTML</span>
-                                    <span>[==========]</span>
+                                    <span class="skill__bar" data-progress="10"></span>
                               </li>
                               <li class="skill__item">
                                     <span>CSS</span>
-                                    <span>[=========-]</span>
+                                    <span class="skill__bar" data-progress="9"></span>
                               </li>
                               <li class="skill__item">
                                     <span>JavaScript</span>
-                                    <span>[=========-]</span>
+                                    <span class="skill__bar" data-progress="9"></span>
                               </li>
                               <li class="skill__item">
                                     <span>TypeScript</span>
-                                    <span>[=======---]</span>
+                                    <span class="skill__bar" data-progress="7"></span>
                               </li>
                               <li class="skill__item">
                                     <span>Angular</span>
-                                    <span>[=======---]</span>
+                                    <span class="skill__bar" data-progress="7"></span>
                               </li>
                               <li class="skill__item">
                                     <span>React</span>
-                                    <span>[=====-----]</span>
+                                    <span class="skill__bar" data-progress="5"></span>
                               </li>
                               <li class="skill__item">
                                     <span>GrapQL</span>
-                                    <span>[=======---]</span>
+                                    <span class="skill__bar" data-progress="7"></span>
                               </li>
                         </ul>
                   </section>
@@ -83,7 +89,7 @@
                         <div class="project">
                               <div class="project__item">
                                     <h4 class="project__title">
-                                          <a href="https://github.com/mcanam/liricle">Liricle →</a>
+                                          <a href="https://github.com/mcanam/liricle">Liricle <span>→</span></a>
                                     </h4>
                                     <p class="project__description">
                                           Javascript library for syncronize timed lyrics (LRC) with song.
@@ -92,7 +98,7 @@
       
                               <div class="project__item">
                                     <h4 class="project__title">
-                                          <a href="https://github.com/mcanam/iblize">Iblize →</a>
+                                          <a href="https://github.com/mcanam/iblize">Iblize <span>→</span></a>
                                     </h4>
                                     <p class="project__description">
                                           Minimal javascript clean code editor library that supports over 250 languages.
@@ -101,7 +107,7 @@
       
                               <div class="project__item">
                                     <h4 class="project__title">
-                                          <a href="https://github.com/mcanam/hanacarakan">Hanacarakan →</a>
+                                          <a href="https://github.com/mcanam/hanacarakan">Hanacarakan <span>→</span></a>
                                     </h4>
                                     <p class="project__description">
                                           A web app to convert Javanese script to latin or vice versa
