@@ -129,28 +129,34 @@ a {
       font-family: monospace;
 }
 
-.project {
+.project,
+.article {
       opacity: 0.7;
 }
 
-.project__title {
+.project__title,
+.article__title {
       width: fit-content;
       font-size: 1.4rem;
 }
 
-.project__title span {
+.project__title span,
+.article__title span {
       transition: 0.2s;
 }
 
-.project__title:hover span {
+.project__title:hover span,
+.article__title:hover span {
       margin-left: 10px;
 }
 
-.project__item {
+.project__item,
+.article__item {
       margin-bottom: 1em;
 }
 
-.project :last-child {
+.project :last-child,
+.article :last-child {
       margin-bottom: 0;
 }
 
